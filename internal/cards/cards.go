@@ -57,7 +57,7 @@ func Step(Element Card, Step int) Card {
 	if Element.Step == 6 {
 		return Element
 	} else {
-		Element.Step++
+		Element.Step = Step
 		Element.NextReview = CalculateNextReview(Element.Step)
 		Element = Update(Element.Id, Element)
 		return Element
