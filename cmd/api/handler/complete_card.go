@@ -9,9 +9,9 @@ import (
 	"go.octopus-project.net/forgetting-curve/internal/cards"
 )
 
+const CompleteCardRoute = "/cards/{Id}/complete"
 
-
-func CompleteHandler(w http.ResponseWriter, r *http.Request) {
+func CompleteCardHandler(w http.ResponseWriter, r *http.Request) {
 
 	vars 	:= mux.Vars(r)
 	var_id  := vars["Id"]

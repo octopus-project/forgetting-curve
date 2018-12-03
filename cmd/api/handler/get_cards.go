@@ -7,6 +7,7 @@ import (
 	"go.octopus-project.net/forgetting-curve/internal/cards"
 )
 
+const ListCardsRoute = "/cards"
 
 func ListCardsHandler(w http.ResponseWriter, r *http.Request) {
 	output, err := json.Marshal(cards.All())

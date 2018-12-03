@@ -13,10 +13,10 @@ import (
 func main() {
 
 	r := mux.NewRouter()
-	r.HandleFunc("/cards", handler.InsertCardsHandler).Methods("POST")
-	r.HandleFunc("/cards", handler.ListCardsHandler).Methods("GET")
-	r.HandleFunc("/cards/{Id}", handler.GetCardHandler).Methods("GET")
-	r.HandleFunc("/cards/{Id}/complete", handler.CompleteHandler).Methods("GET")
+	r.HandleFunc(handler.InsertCardsRoute, 	handler.InsertCardsHandler).Methods("POST")
+	r.HandleFunc(handler.ListCardsRoute, 	handler.ListCardsHandler).Methods("GET")
+	r.HandleFunc(handler.GetCardRoute, handler.GetCardHandler).Methods("GET")
+	r.HandleFunc(handler.CompleteCardRoute, handler.CompleteCardHandler).Methods("GET")
 
 	http.Handle("/", r)
 	

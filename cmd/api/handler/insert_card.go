@@ -8,6 +8,8 @@ import (
 )
 
 
+const InsertCardsRoute = "/cards"
+
 func InsertCardsHandler(w http.ResponseWriter, r *http.Request) {
 	decoder := json.NewDecoder(r.Body)
 

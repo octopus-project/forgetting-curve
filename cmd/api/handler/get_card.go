@@ -9,6 +9,8 @@ import (
 	"github.com/gorilla/mux"
 )
 
+const GetCardRoute = "/cards/{Id}"
+
 func GetCardHandler(w http.ResponseWriter, r *http.Request) {
 	vars 	:= mux.Vars(r)
 	var_id  := vars["Id"]
