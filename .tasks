@@ -1,0 +1,5 @@
+[ ] Add DockerFile w/ MySQL or DynamoDB
+[ ] Implement MySQL Strategy
+[ ] Remove ID as key 
+[ ] Add Route for "Today Review"
+
